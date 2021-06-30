@@ -36,3 +36,7 @@ nav ul li ul li {
 nav ul li ul li a {
     padding: 0px 12px;
 }
+nav ul li ul li a:hover {
+    background-color: #f8fafb;
+    color: #2f3e54;
+ }
