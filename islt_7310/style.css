@@ -4,7 +4,7 @@ h3 {color: #2f3e54}
 
 header {
     display: inline;
-    vertical-align: end;
+    vertical-align: center;
 }
 
 @media screen and (min-width: 760px) {
@@ -25,6 +25,7 @@ header {
 
 .picture {
     grid-area: picture;
+    padding-top: 20px;
     }
 .education {
     grid-area: education;
@@ -45,7 +46,12 @@ header {
     .grid {
         font-size: x-large;
     }
+    header {
+        font-size: smaller;
+    }
     img {
-        width: 100%;
+        size: auto;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
