@@ -42,7 +42,7 @@ header {
     justify-self: center;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .grid {
         font-size: x-large;
     }
