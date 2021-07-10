@@ -52,7 +52,7 @@ div p {
     justify-self: center;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 759px) {
     .grid {
         display: grid;
         grid-gap: 1em;
