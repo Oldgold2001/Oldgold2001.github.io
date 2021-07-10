@@ -11,7 +11,9 @@ div p {
     padding-left: 20px;
     padding-right: 20px;
 }
-
+.hangingindent {
+    padding-left: 40px ;
+    text-indent: -22px ;
 @media screen and (min-width: 760px) {
     img {
         width: 100%;
