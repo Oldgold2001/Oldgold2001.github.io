@@ -7,17 +7,10 @@ header {
     display: inline;
     vertical-align: center;
 }
-div p {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.hangingindent {
-    padding-left: 40px ;
-    text-indent: -22px ;
+
 @media screen and (min-width: 760px) {
     img {
         width: 100%;
-        text-align: center;
     }
     .grid {
     display: grid;
@@ -25,25 +18,20 @@ div p {
     grid-template-columns: 20% 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: 
-        "picture item1"
-        "item2 item2"
+        "picture education"
+        "hobby hobby"
         "video video"
         "resume resume";
     }
 .picture {
     grid-area: picture;
     padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     }
-.item1 {
-    grid-area: item1;
-    padding-right: 20px;
+.education {
+    grid-area: education;
     }
-.item2 {
-    grid-area: item2;
-    padding-left: 20px;
-    padding-right: 20px;
+.hobby {
+    grid-area: hobby;
     }
 .video {
     grid-area: video;
@@ -54,31 +42,17 @@ div p {
     justify-self: center;
     }
 }
-@media screen and (max-width: 759px) {
+@media screen and (max-width: 500px) {
     .grid {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: 
-            "picture"
-            "item1"
-            "item2"
-            "video"
-            "resume";
-        font-size: larger;
-    }
-    .picture {
-        grid-area: picture;
-        justify-self: center;
-
+        font-size: large;
     }
     header {
         font-size: smaller;
     }
     img {
-        width: 100%;
- 
+        size: auto;
+        padding-left: 60px;
+        padding-right: 60px;
     }
     .video {
         grid-area: video;
@@ -89,9 +63,7 @@ div p {
         justify-self: center;
         }
     p {
-        font-size: larger;
-        padding: 10px 10px;
+        font-size: x-large;
     }
-
 }
 
