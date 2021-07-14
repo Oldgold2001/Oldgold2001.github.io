@@ -26,10 +26,20 @@ div p {
     padding-left: 40px ;
     text-indent: -22px ;
 }
+footer {
+    color: white;
+}
+footer a {
+    color: #FFCF13;
+}
+footer img {
+    color: white;
+}
 @media screen and (min-width: 760px) {
     img {
-        width: 100%;
+        max-width: 100%;
         text-align: center;
+        padding-right: 10px;
     }
     .grid {
     display: grid;
@@ -89,7 +99,7 @@ div p {
         font-size: smaller;
     }
     img {
-        width: 100%;
+        max-width: 100%;
  
     }
     .item3 {
@@ -133,10 +143,16 @@ h1 {
     line-height: 30pt;
     margin: 0;
   }
-  blockquote {font-family: berkshire, serif; 
-  }
 
 @page {
     margin: 1in;
 }
 }
+.box {
+    width: 100%;
+    height: 100%;
+    background-image: url(blue.jpg);
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+  }
