@@ -4,14 +4,14 @@ h1 {color: #2f3e54;
 h2 {color: #2f3e54}
 h3 {color: #2f3e54}
 
-@font-face {
-    font-family: berkshire;
-    src: url(Fonts/berkshireswashregular.tff);
+@font-face { 
+    font-family: berkshire;   
+    src: url(Fonts/berkshireswashregular.ttf); 
 }
+blockquote {font-family: berkshire, serif; 
+    }
 
-h1 {
-    font-family: berkshire;
-}
+h1 {font-family: berkshire, serif;}
 
 header {
     display: inline;
@@ -39,8 +39,8 @@ div p {
     grid-template-areas: 
         "picture item1"
         "item2 item2"
-        "video video"
-        "resume resume";
+        "item3 item3"
+        "item4 item4";
     }
 .picture {
     grid-area: picture;
@@ -57,12 +57,12 @@ div p {
     padding-left: 20px;
     padding-right: 20px;
     }
-.video {
-    grid-area: video;
+.item3 {
+    grid-area: item3;
     justify-self: center;
     }
-.resume {
-    grid-area: resume;
+.item4 {
+    grid-area: item4;
     justify-self: center;
     }
 }
@@ -76,8 +76,8 @@ div p {
             "picture"
             "item1"
             "item2"
-            "video"
-            "resume";
+            "item3"
+            "item4";
         font-size: larger;
     }
     .picture {
@@ -92,12 +92,12 @@ div p {
         width: 100%;
  
     }
-    .video {
-        grid-area: video;
+    .item3 {
+        grid-area: item3;
         justify-self: center;
         }
-    .resume {
-        grid-area: resume;
+    .item4 {
+        grid-area: item4;
         justify-self: center;
         }
     p {
@@ -107,3 +107,36 @@ div p {
 
 }
 
+@media print {
+* {
+    background: transparent !important;
+    color: black !important;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+    nav,
+    .item3,
+    .item4,
+    img {
+        display: none;
+}
+h1 {
+    font-size: 30pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+  
+  h2,h3,h4,h5,h6 {
+    font-size: 20pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+  blockquote {font-family: berkshire, serif; 
+  }
+
+@page {
+    margin: 1in;
+}
+}
