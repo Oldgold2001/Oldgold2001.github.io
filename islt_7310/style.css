@@ -1,22 +1,23 @@
-@font-face {
-    font-family: Berkshire;
-    src: url(BerkshireSwash-Regular.tff)
-}
-header {
-    font-family: Berkshire, open;
-}
 h1 {color: #2f3e54;
     text-align: center
 }
 h2 {color: #2f3e54}
 h3 {color: #2f3e54}
 
+@font-face {
+    font-family: berkshire;
+    src: url(Fonts/berkshireswashregular.tff);
+}
 
+h1 {
+    font-family: berkshire;
+}
 
 header {
     display: inline;
     vertical-align: center;
-}
+     }
+
 div p {
     padding-left: 20px;
     padding-right: 20px;
@@ -24,6 +25,7 @@ div p {
 .hangingindent {
     padding-left: 40px ;
     text-indent: -22px ;
+}
 @media screen and (min-width: 760px) {
     img {
         width: 100%;
