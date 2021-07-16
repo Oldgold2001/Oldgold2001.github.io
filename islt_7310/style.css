@@ -52,6 +52,7 @@ footer a {
     }
 .picture {
     grid-area: picture;
+    max-width: 100%;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -64,6 +65,7 @@ footer a {
     grid-area: item2;
     padding-left: 20px;
     padding-right: 20px;
+    justify-self: left;
     }
 .item3 {
     grid-area: item3;
@@ -127,6 +129,8 @@ footer a {
     nav,
     .item3,
     .item4,
+    .video,
+    .picture,
     img {
         display: none;
 }
