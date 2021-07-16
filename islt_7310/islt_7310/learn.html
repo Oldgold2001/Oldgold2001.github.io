@@ -2,34 +2,103 @@
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
                <title>Learn</title>
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
+               <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+           <style>
+               img {
+                max-width: 100%;
+               }
+               #center {
+                width: 35%;
+                text-align: center;
+               }
+               div {
+                   padding-left: 20px;
+                   padding-right: 20px;
+               }
+         
+           </style>
             </head>
 <body>
     <nav>
+        <div class="box">
+        <label id="hamburger">&#9776;</label>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#learn.html">Learn</a>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
+            <li><a href="learn.html">Learn</a>
+                <ul id="mobileHide">
+                    <li><a href="goal1.html">Goal 1</a></li>
+                    <li><a href="goal2.html">Goal 2</a></li>
+                    <li><a href="goal3.html">Goal 3</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">References</a></li>
-            <li><a href="#contact.html">Contact</a></li>
+            <li class="lastMobile"><a href="#contact.html">Contact</a></li>
         </ul>
+    </div>
     </nav>
-    <header></header>
+    <header><h1>Learning Goals</h1></header>
     <main>
-    <p></p>
+        <div class="grid">
+           <div class="picture"><img src="Justices2021.jpg"  width="auto" height="auto" alt="Supreme Court"></div>
+            <div class="item1">
+                <a href id="top"><h3>Goals</h3></a>
+                <p><a href="#lg1">Learning Goal 1</a> - Students will understand the concept of Judicial Review.</p>
+                <p><a href="#lg2">Learning Goal 2</a> - Students will be able to identify the question being decided in 5 important US Supreme Court cases.</p>
+                <p><a href="#lg3">Learning Goal 3</a> - Students will match the 5 Landmark US Supreme Court Cases with the Constitutional Amendment they are based on.</p>
+            </div>
+            <div class="item2"><a name="lg1"><p><h2><em>Marbury v. Madison</em></h2></p></a>
+                 <p>Judicial Review is a process that is not officially defined in the US Constitution.  However, it is an important part of the checks and balance system we have in our government.  Through Judicial Review the courts can check the power of the Legislative and Executive branch of the United States government.  By making decisions on questions brought before the Supreme Court they can declare a law or act to be unconstitutional or further clarify the interpretation of how the law should be applied to the citizens of the country.  Judicial Review was originally set up in the court case Marbury v. Madison in 1803.</p>
+                <center><iframe id="video1" width=500" height="300" src="https://www.youtube.com/embed/KwciUVLdSPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                <p><h2>Questions</h2></p>
+                <p>After watching the video answer questions:</p>
+                <li class="hangingindent">A point of importance in this case is that Marshall ruled an act of Congress (The Judiciary Act of 1789) to be...</li>
+                <li class="hangingindent">Judicial review is a basic Constitutional principle reaffirmed by this case. What is judicial review?</li>
+            </br>
+            <a href="#top">Back</a></div>
+            <div class="item3"><a name="lg2"><h2>11 Landmark Casses</h2></a>
+                <p>There are many court cases that are decided on every year.  For the purposes of this website, we will focus on 11 Landmark US Supreme Court cases selected by the American Bar Association.  Students will learn about the issue of the case and what caused it to be heard by the Supreme Court.  This is often called the question of the case.  The Students will learn about the basic facts of the case as well as the decision.  Next the students will go to the oyez.com website to research the cases further.  By looking at this website students will be able to see the majority, concurring, or dissenting opinion for each of the 11 cases.</p>
+                <p><a href='https://www.americanbar.org/groups/public_education/programs/constitution_day/landmark-cases/'>American Bar Association Article</a></p>
+            <p><h3>Court Cases</h3></p>
+                Case names will link to information on <a href='https://www.oyez.org/ '>www.oyez.org/ </a>
+                <br>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1789-1850/5us137'><em>Marbury v Madison</em></a> (1803) - Established Judicial Review</p></li>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1789-1850/17us316'><em>McCulloch v Maryland</em></a> (1819) – Established implied powers of Congress and federal supremacy</li></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1789-1850/22us1'><em>Gibbons v Ogden</em></a> (1824) – Gave the federal government more power to regulate the economy</li></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1850-1900/60us393'><em>Dred Scott v Sanford</em></a> (1857) – Stated Slaves were property and helped lead to Civil War</li></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1900-1940/249us47'><em>Schenck v U.S.</em></a> (1919) – Set up the clear and present danger test for the freedom of speech in the U.S.</li></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1940-1955/347us483'><em>Brown v Board of Education</em></a> (1954) – Overturned segregation laws in schools and laid the ground work for the Civil Rights movement of the 60s.</li></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1962/155'><em>Gideon v Wainwright</em></a> (1963) – Established the defendants right to a lawyer in all state criminal trials.</li></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1965/759'><em>Miranda v Arizona</em></a> (1966) – Said rights must be told to anyone being accused of a crime by the police.  Created the Miranda Rights.</li></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1968/21'><em>Tinker v Des Moines</em></a> (1969) – Set parameters to First Amendment freedom of speech rights for students in schools.</li></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1971/70-18'><em>Roe v Wade</em></a> (1973) – Central case dealing with abortion rights in the U.S.</li></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1979/76-811'><em>Regents of the University of California v Bakke</em></a> (1978) – Important case that up affirmative action programs as constitutional.</li></p>
+                </br>
+                <a href="#top">Back</a>    
+            </div>
+            <div class="item4"><p><a name="lg3"><h2>How do the Justices decide?</h2></p></a>
+                <p>The next step in understanding the court cases is looking at the amendments they are based upon.  The question of each case is based off an amendment or article of the US Constitution.  The Supreme Court justices will look at the Constitution and decide based on how they interpret the Constitution.  By matching the Landmark Court Cases up with the appropriate article or amendment it will allow the students to see the connection between the case and the Constitution.</p>        
+                <p><center><img src="USConstitution.jpg"  width="350" height="auto" alt="US Constitution"></center></p>
+                        <p><a href='https://www.archives.gov/founding-docs/constitution-transcript '><center>US Constitution</center></a></p></div>
+                            <p><center>Table will go here</center></p>
+                </br>
+                <a href="#top">Back</a>
+                </div>    
+        </div>
     </main>
     <footer>
-        <p>Josh Dorr <br>
-            jbd2f6@umsystem.edu <br>
+        <div class="box">
+        <p>Joshua Dorr <br>
+            <img class="zoom" src="email3.png"  width="20" height="20" alt="email Icon">jbd2f6@umsystem.edu <br>
+            <img class="zoom" src="phone2.png"  width="20" height="20" alt="email Icon"> 1+888-888-8888<br>
             &copy; Copyright 2021 Joshua Dorr </p> 
+            <a href='https://www.freepik.com/photos/vintage'>Vintage photo created by benzoix - www.freepik.com</a>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
     </footer>
 </body>
 </html>

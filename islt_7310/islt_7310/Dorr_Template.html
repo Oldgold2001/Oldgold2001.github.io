@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-               <meta charset="utf-8">
-               <title>Page Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <label id="hamburger">&#9776;</label>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="learn.html">Learn</a>
+                <ul id="mobileHide">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">References</a></li>
+            <li class="lastMobile"><a href="#contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <header></header>
     <main>
     <p></p>
     </main>
     <footer>
-        <p>Josh Dorr <br>
-            jbd2f6@umsystem.edu <br>
+        <div class="box">
+        <p>Joshua Dorr <br>
+        <img src="email3.png"  width="20" height="20" alt="email Icon">jbd2f6@umsystem.edu <br>
+        <img src="phone2.png"  width="20" height="20" alt="email Icon"> 1+888-888-8888<br>
             &copy; Copyright 2021 Joshua Dorr </p> 
+            <a href='https://www.freepik.com/photos/vintage'>Vintage photo created by benzoix - www.freepik.com</a>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
     </footer>
 </body>
 </html>

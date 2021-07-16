@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Goal 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        .grid {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: 
+                "item1"
+                "picture"
+                "item2"
+                "item3"
+                "item4";
+        }
+        .picture {
+    grid-area: picture;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+        }
+.item1 {
+    grid-area: item1;
+    padding: 20px 20px ;
+    }
+.item2 {
+    grid-area: item2;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="box">
+        <label id="hamburger">&#9776;</label>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="learn.html">Learn</a>
+                <ul id="mobileHide">
+                    <li><a href="goal1.html">Goal 1</a></li>
+                    <li><a href="goal2.html">Goal 2</a></li>
+                    <li><a href="goal3.html">Goal 3</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">References</a></li>
+            <li class="lastMobile"><a href="#contact.html">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <header><h1>Judicial Review</h1></header>
+    <main>
+        <div class="grid">
+            <div class="picture"><iframe width="auto" height="auto" src="https://www.youtube.com/embed/KwciUVLdSPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="item1"><h2><em>Marbury v. Madison</em></h2>
+                Judicial Review is a process that is not officially defined in the US Constitution.  However, it is an important part of the checks and balance system we have in our government.  Through Judicial Review the courts can check the power of the Legislative and Executive branch of the United States government.  By making decisions on questions brought before the Supreme Court they can declare a law or act to be unconstitutional or further clarify the interpretation of how the law should be applied to the citizens of the country.  Judicial Review was originally set up in the court case Marbury v. Madison in 1803.</div>
+            <div class="item2"><h2>Questions</h2>
+                <p>After watching the video answer questions:</p>
+                <p>1. A point of importance in this case is that Marshall ruled an act of Congress (The Judiciary Act of 1789) to be...</p>
+                <p>2. Judicial review is a basic Constitutional principle reaffirmed by this case. What is judicial review? </p></div>
+</div>
+        </div>
+    </main>
+    <footer>
+        <div class="box">
+        <p>Joshua Dorr <br>
+        <img class="zoom" src="email3.png"  width="20" height="20" alt="email Icon">jbd2f6@umsystem.edu <br>
+        <img class="zoom" src="phone2.png"  width="20" height="20" alt="email Icon"> 1+888-888-8888<br>
+            &copy; Copyright 2021 Joshua Dorr </p> 
+            <a href='https://www.freepik.com/photos/vintage'>Vintage photo created by benzoix - www.freepik.com</a>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <a href='https://www.freepik.com/photos/wood'>Wood photo created by Racool_studio - www.freepik.com</a>
+        </div>
+    </footer>
+</body>
+</html>
