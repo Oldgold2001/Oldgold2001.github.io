@@ -25,6 +25,7 @@ div p {
 .hangingindent {
     padding-left: 40px ;
     text-indent: -22px ;
+    list-style-type: decimal;
 }
 footer {
     color: white;
