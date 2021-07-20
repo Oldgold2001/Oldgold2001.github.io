@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+          
+        @media screen and (min-width: 760px) {
+     
+        .grid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "item1 item2";
+        }
+    .item1 {
+        grid-area: item1;
+       font-size: large;
+       justify-self: left;
+       padding-left: 5px;
+        }
+    .item2 {
+        grid-area: item2;
+        font-size: large;
+        justify-self: left;
+    
+        }
+    
+    }
+    @media screen and (max-width: 759px) {
+        .grid {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: 20% ;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "item1"
+                "item2";
+               }
+    
+        .item1 {
+            grid-area: item1;
+            padding:0%;
+            font-size: large;
+            justify-self: center;
+          }
+           
+        .item2{
+            grid-area: item2;
+            padding:0%;
+            font-size: large;
+       justify-self: center;
+    
+            }
+              }
+    fieldset{
+    width: 45%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    border-color:#2f3e54;
+    border-width: 3px;
+    }
+    #comments{
+        width:15.5em; 
+        height:100px;
+        margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+    }
+        legend{
+        
+    font-weight: bold;
+        color:#2f3e54;
+        margin-bottom: 2em;
+    }
+    
+    label {
+        float: left;
+        width: 10em;
+        text-align: right;
+    }
+    
+        input, select {
+            width:15em;
+            height:2em;
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+            
+        }
+    
+       input:required, input[required] {
+           border: 1px solid #226ad8;
+              }
+    
+              input:valid {
+                  border: 1px solid 560183;
+                            }
+    input:invalid{
+        box-shadow: none;
+    }
+    
+    textarea:required, textarea[required] {
+        border: 1px solid #226ad8;
+           }
+    
+           textarea:valid {
+               border: 1px solid #226ad8;
+                         }
+    textarea:invalid{
+     box-shadow: none;
+    }
+    
+        .but{
+           
+            font-weight:bold;
+           background-color:#FF7013;
+            color:white;
+           width: 15em;
+           margin-left: 210px;
+           border-color:#FF7013;
+        }
+    br {clear:both;}
+    
+    @media screen and (max-width:1550px) { 
+        label {
+            float: left;
+            width: 10em;
+            text-align: left;
+        }
+    
+        .but {
+    margin-left: 10px;
+    }
+    
+    }
+            </style>
+</head>
+<body>
+    <nav>
+        <div class="box">
+        <label id="hamburger">&#9776;</label>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="learn.html">Learn</a>
+                <ul id="mobileHide">
+                    <li><a href="goal1.html">Goal 1</a></li>
+                    <li><a href="goal2.html">Goal 2</a></li>
+                    <li><a href="goal3.html">Goal 3</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">References</a></li>
+            <li class="lastMobile"><a href="#contact.html">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <header></header>
+    <h1>Contact Me</h1>
+    <main>
+        <div class="grid">
+            <div class="item1"><p><Strong>Joshua Dorr</Strong> <br>
+                                        4500 River Park Dr<br>
+                                        Park Hill South High School <br>
+                                        Riverside, MO 64150<br></p>
+                                      <p> <em>Email</em>: <a href="mailto:jbd2f6@umsystem.edu">jbd2f6@umsystem.edu</a><br> 
+            <em>Phone</em>: 573-882-7881 </p></div>
+        <div class="item2">
+         
+        <p>Fill in the form for easy contact.</p>
+        <form id="formid" action="mailto:amb7kb@umsystem.edu?Subject=Educational%20Website%20Contact" method="post" enctype="text/plain">
+            <fieldset>
+            <label for="first">First Name:</label>
+            <input type="text" name="First Name" autofocus required placeholder="First Name">  
+            <br>
+            <label for="Last">Last Name:</label>
+            <input type="text" name="Last Name" required placeholder="Last Name">  
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" name="Email" required placeholder="Email">
+            <br>
+            <label for="Message">Message:</label>
+              
+            <textarea id="comments" name="Comments" placeholder="Your Message Here." required></textarea> 
+            <br>
+            <input class="but" type="submit" value="Submit"> <br>
+           
+        </fieldset>
+    </form>
+        </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="box">
+        <p>Joshua Dorr <br>
+            <img class="zoom" src="email3.png"  width="20" height="20" alt="email Icon">jbd2f6@umsystem.edu <br>
+            <img class="zoom" src="phone2.png"  width="20" height="20" alt="email Icon"> 1+888-888-8888<br>
+            &copy; Copyright 2021 Joshua Dorr </p> 
+            <a href='https://www.freepik.com/photos/vintage'>Vintage photo created by benzoix - www.freepik.com</a>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+    </footer>
+</body>
+</html>
