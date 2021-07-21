@@ -8,6 +8,102 @@
                <link rel="stylesheet" href="nav.css">
                <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
             </head>
+            <style>
+                @media screen and (min-width: 760px) {
+    img {
+        max-width: 100%;
+        text-align: center;
+        padding-right: 10px;
+    }
+    .grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "picture item1"
+        "item2 item2"
+        "item3 item3"
+        "item4 item4";
+    }
+.picture {
+    grid-area: picture;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+.item1 {
+    grid-area: item1;
+    padding-right: 20px;
+    }
+.item2 {
+    grid-area: item2;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-self: left;
+    }
+.item3 {
+    grid-area: item3;
+    justify-self: center;
+    }
+.item4 {
+    grid-area: item4;
+    justify-self: center;
+    }
+}
+@media screen and (max-width: 759px) {
+    .grid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "picture"
+            "item1"
+            "item2"
+            "item3"
+            "item4";
+        font-size: large;
+    }
+    .picture {
+        grid-area: picture;
+        justify-self: center;
+      
+
+    }
+    header {
+        font-size: smaller;
+    }
+    img {
+        max-width: 100%;
+ 
+    }
+    .item2 {
+        grid-area: item2
+        justify-self: center;
+    }
+    .item3 {
+        grid-area: item3;
+        justify-self: center;
+        }
+    .item4 {
+        grid-area: item4;
+        justify-self: center;
+        }
+    p {
+        font-size: larger;
+        padding: 10px 10px;
+    }
+    .box {
+        width: 100%;
+        height: 100%;
+        background-image: url(blue.jpg);
+        padding: 0;
+        margin: 0;
+        background-size: cover;
+}
+            </style>
 <body>
     <nav>
         <div class="box">
@@ -16,11 +112,7 @@
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="learn.html">Learn</a>
-                <ul id="mobileHide">
-                    <li><a href="goal1.html">Goal 1</a></li>
-                    <li><a href="goal2.html">Goal 2</a></li>
-                    <li><a href="goal3.html">Goal 3</a></li>
-                </ul>
+           
             </li>
             <li><a href="reflection.html">References</a></li>
             <li class="lastMobile"><a href="contact.html">Contact</a></li>

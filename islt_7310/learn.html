@@ -8,6 +8,53 @@
                <link rel="stylesheet" href="nav.css">
                <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
            <style>
+                table.learntable {
+                  width: 100%;
+                  background-color: #ffffff;
+                  border-collapse: collapse;
+                  border-width: 2px;
+                  border-color: black;
+                  border-style: solid;
+                  color: black;
+                }
+                
+                table tr:nth-of-type() {background: white; color:black;}
+                table tr:nth-of-type(2) {background: #E8E8E8; color:black;}
+                table tr:nth-of-type(3) {background: white; color:black;}
+                table tr:nth-of-type(4) {background: #E8E8E8; color:black;}
+                table tr:nth-of-type(5) {background: white; color:black;}
+                table tr:nth-of-type(6) {background: #E8E8E8; color:black;}
+                table tr:nth-of-type(7) {background: white; color:black;}
+                table tr:nth-of-type(8) {background: #E8E8E8; color:black;}
+                table tr:nth-of-type(9) {background: white; color:black;}
+                table tr:nth-of-type(10) {background: #E8E8E8; color:black;}
+                table tr:nth-of-type(11) {background: white; color:black;}
+                
+                                
+                table.learntable td, table.learntable th {
+                  border-width: 2px;
+                  border-color:black;
+                  border-style: solid;
+                  padding: 10px;
+                }
+                th.left, td.left {
+                    max-width: 50%;
+                }
+                table.learntable thead {
+                  background-color: #226ad8;
+                  color: white;
+                }
+                table.learntable tfoot {
+                  background-color: #226ad8;
+                  color: white;
+                }
+                table.learntable caption {
+                    padding-bottom: 10px;
+                    padding-left: 100px;
+                    padding-right: 100px;
+                }
+                main {overflow: scroll;}
+
                img {
                 max-width: 100%;
                }
@@ -29,11 +76,11 @@
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn</a>
+            <li><a href="learn.html">Learn Overview</a>
                 <ul id="mobileHide">
-                    <li><a href="goal1.html">Goal 1</a></li>
-                    <li><a href="goal2.html">Goal 2</a></li>
-                    <li><a href="goal3.html">Goal 3</a></li>
+                    <li><a href="#lg1">Goal 1</a></li>
+                    <li><a href="#lg2">Goal 2</a></li>
+                    <li><a href="#lg3">Goal 3</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">References</a></li>
@@ -51,16 +98,17 @@
                 <p><a href="#lg2">Learning Goal 2</a> - Students will be able to identify the question being decided in 5 important US Supreme Court cases.</p>
                 <p><a href="#lg3">Learning Goal 3</a> - Students will match the 5 Landmark US Supreme Court Cases with the Constitutional Amendment they are based on.</p>
             </div>
-            <div class="item2"><a name="lg1"><p><h2><em>Marbury v. Madison</em></h2></p></a>
-                 <p>Judicial Review is a process that is not officially defined in the US Constitution.  However, it is an important part of the checks and balance system we have in our government.  Through Judicial Review the courts can check the power of the Legislative and Executive branch of the United States government.  By making decisions on questions brought before the Supreme Court they can declare a law or act to be unconstitutional or further clarify the interpretation of how the law should be applied to the citizens of the country.  Judicial Review was originally set up in the court case Marbury v. Madison in 1803.</p>
+            <div class="item2"><a name="lg1"><p><h1><u>Learning Goal 1</u></h1></p></a>
+                <p><h2><em>Marbury v. Madison</em></h2></p>                 
+                <p>Judicial Review is a process that is not officially defined in the US Constitution.  However, it is an important part of the checks and balance system we have in our government.  Through Judicial Review the courts can check the power of the Legislative and Executive branch of the United States government.  By making decisions on questions brought before the Supreme Court they can declare a law or act to be unconstitutional or further clarify the interpretation of how the law should be applied to the citizens of the country.  Judicial Review was originally set up in the court case Marbury v. Madison in 1803.</p>
                 <center><iframe id="video1" width=500" height="300" src="https://www.youtube.com/embed/KwciUVLdSPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
                 <p><h2>Questions</h2></p>
                 <p>After watching the video answer questions:</p>
                 <li class="hangingindent">A point of importance in this case is that Marshall ruled an act of Congress (The Judiciary Act of 1789) to be...</li>
                 <li class="hangingindent">Judicial review is a basic Constitutional principle reaffirmed by this case. What is judicial review?</li>
             </br>
-            <a href="#top">Back</a></div>
-            <div class="item3"><a name="lg2"><h2>11 Landmark Casses</h2></a>
+            <a href="#top">Back to top</a></div>
+            <div class="item3"><a name="lg2"><h2>11 Landmark Cases</h2></a>
                 <p>There are many court cases that are decided on every year.  For the purposes of this website, we will focus on 11 Landmark US Supreme Court cases selected by the American Bar Association.  Students will learn about the issue of the case and what caused it to be heard by the Supreme Court.  This is often called the question of the case.  The Students will learn about the basic facts of the case as well as the decision.  Next the students will go to the oyez.com website to research the cases further.  By looking at this website students will be able to see the majority, concurring, or dissenting opinion for each of the 11 cases.</p>
                 <p><a href='https://www.americanbar.org/groups/public_education/programs/constitution_day/landmark-cases/'>American Bar Association Article</a></p>
             <p><h3>Court Cases</h3></p>
@@ -83,8 +131,81 @@
             <div class="item4"><p><a name="lg3"><h2>How do the Justices decide?</h2></p></a>
                 <p>The next step in understanding the court cases is looking at the amendments they are based upon.  The question of each case is based off an amendment or article of the US Constitution.  The Supreme Court justices will look at the Constitution and decide based on how they interpret the Constitution.  By matching the Landmark Court Cases up with the appropriate article or amendment it will allow the students to see the connection between the case and the Constitution.</p>        
                 <p><center><img src="USConstitution.jpg"  width="350" height="auto" alt="US Constitution"></center></p>
-                        <p><a href='https://www.archives.gov/founding-docs/constitution-transcript '><center>US Constitution</center></a></p></div>
-                            <p><center>Table will go here</center></p>
+                        <p><a href='https://www.archives.gov/founding-docs/constitution-transcript '><center>US Constitution</center></a></p>
+                        <h3>Connections to the US Constitution</h3><br>
+                        <table class="learntable">
+                            <caption>How does each case connect to the US Constitution? The table below lists the court case in Column 1.  Column 2 cites the part of the Constitution the Justices used. The final column explains the reasoning the Court used to explain their decision.</caption>
+                            <thead>
+                              <tr>
+                                <th class="first">Court Case</th>
+                                <th class="second">Constitution Citation</th>
+                                <th class="third">Reasoning of Court</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="first"><em>Marbury v Madison</em></td>
+                                <td class="second">Article III Section 2<br>
+                                    Article VI Paragraph 2</td>
+                                <td class="third">The Court said the Judiciary Act of 1789 was unconstitutional.  The reason was Supremacy Clause said the Constitution was above laws made by Congress.</td>
+                              </tr>
+                              <tr>
+                                <td class="first"><em>McCullOch v Maryland</em></td>
+                                <td class="second">Article I Section 8</td>
+                                <td class="third">Set up the power of the Elastic Clause saying that it allowed Congress to make laws that were related or “Necessary” to executing enumerated powers in the Constitution.</td>
+                              </tr>                              <tr>
+                                <td class="first"><em>Gibbons v Ogden</em></td>
+                                <td class="second">Article I Section 8 <br>
+                                    Article VI Paragraph 2
+                                    </td>
+                                    <td class="third">Justices cited the Commerce Clause and the Supremacy Clause.  First, the Commerce Clause gave Congress the ability to regulate interstate trade.  Second, the Supremacy Clause said the national laws would override the laws of the state.</td>
+                              </tr>                              <tr>
+                                <td class="first"><em>Dred Scott v  Sanford</em></td>
+                                <td class="second">5th Amendment</td>
+                                <td class="third">The Courts stated that slaves were considered property and according the 5th amendment and the government could not take property away from US citizens.</td>
+                              </tr>                              <tr>
+                                <td class="first"><em>Schenck v U.S.</em></td>
+                                <td class="second">Article I, Section 8, Clause 11 <br>
+                                    1st Amendment
+                                    <td class="third">The war powers of Congress gave them the ability to enact the Espionage Act.  The Court further cited Freedom of Speech in the 1st Amendment did not protect speech that can cause a “clear and present” danger to citizens.</td>
+                              </tr>                              <tr>
+                                <td class="first"><em>Brown v Board of Education</em></td>
+                                <td class="second">14th Amendment</td>
+                                <td class="third">The policy of “Separate but Equal” was established in an earlier case. Brown v Board found segregated schools were not constitutional according the Equal Protection Clause of the 14th amendment.</td>
+                              </tr>                              <tr>
+                                <td class="first"><em>Gideon v Wainwright</em></td>
+                                <td class="second">6th Amendment <br>
+                                    14th Amendment
+                                    </td>
+                                    <td class="third">The 14th Amendment extended rights given in the US Constitution to the state level.  The 6th amendment right to counsel was a right of defendants in both Federal and State trials.  As a result, states must provide a lawyer for anyone who cannot afford one.</td>
+                              </tr>                              <tr>
+                                <td class="first"><em>Miranda v Arizona</em></td>
+                                <td class="second">5th Amendment</td>
+                                <td class="third">In a close decision the Court said according to the 5th amendment all people being questioned by the police should be told their Constitutional Rights.  Dissenting opinions believed this was an over extension of the 5th amendment rights and that it took power away from the police to question suspects.</td>
+                              </tr>                              <tr>
+                                <td class="first"><em>Tinker v Des Moines</em></td>
+                                <td class="second">1st Amendment</td>
+                                <td class="third">The Justices cited the 1st Amendment right to freedom of speech.  They stated that students did not lose their right to freedom of speech or expression when they came into school.  However, it was noted this freedom only extends to speech that does not interfere with the operation of the school.</td>
+                              </tr>                              <tr>
+                                <td class="first"><em>Roe v Wade</em></td>
+                                <td class="second">9th Amendment <br>
+                                    14th Amendment
+                                    </td>
+                                    <td class="third">The 9th Amendment gives citizens rights that are not directly mentioned in the Constitution.  One of these rights is the right to privacy.  The Court believed that laws limiting abortions violated this right since pregnancy was considered a personal issue.  The 14th Amendments incorporation clause extended the 9th Amendment liberties to the states.</td>
+                              </tr>                              <tr>
+                                <td class="first"><em>Regents of the University of California v Bakke</em></td>
+                                <td class="second">14th Amendment</td>
+                                <td class="third">The Court stated racial quota systems used for college admissions were not constitutional according to the Equal Protection Clause of the 14th Amendment.  The decision however was confusing because there was not a single majority opinion.  In fact, one of the justices who voted in the majority actually agreed with both opinions and as a result gave court support of affirmative action initiatives.</td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Find another case</th>
+                                    <th>Constitutional Citation?</th>
+                                    <th>What was the reason the court made their decision?</th>
+                                </tr>
+                            </tfoot>
+                          </table></center>
                 </br>
                 <a href="#top">Back</a>
                 </div>    
