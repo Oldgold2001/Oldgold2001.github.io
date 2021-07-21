@@ -23,11 +23,7 @@ div p {
     padding-left: 20px;
     padding-right: 20px;
 }
-.hangingindent {
-    padding-left: 40px ;
-    text-indent: -22px ;
-    list-style-type: decimal;
-}
+
 footer {
     color: white;
     background-image: url(blue.jpg);
