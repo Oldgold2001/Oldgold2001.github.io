@@ -9,12 +9,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <style>
           
-        @media screen and (min-width: 760px) {
+@media screen and (min-width: 760px) {
      
         .grid {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: 50% 1fr;
+        grid-template-columns: 30% 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
             "item1 item2";
@@ -37,7 +37,7 @@
         .grid {
             display: grid;
             grid-gap: 1em;
-            grid-template-columns: 1fr;
+            grid-template-columns: 20% 1fr;
             grid-template-rows: auto;
             grid-template-areas: 
                 "item1"
@@ -55,22 +55,23 @@
             grid-area: item2;
             padding:0%;
             font-size: large;
-       justify-self: center;
+            justify-content: center;
     
             }
               }
     fieldset{
-    width: 45%;
+    width: 100%;
     margin-top: 1em;
     margin-bottom: 1em;
     padding-top: 1em;
     border-color:#2f3e54;
     border-width: 3px;
+    justify-self: left;
     }
     #comments{
-        width:15.5em; 
+        width:25.5em; 
         height:100px;
-        margin-left: 1em;
+        margin-left: -70px;
             margin-right: 1em;
             margin-bottom: 1em;
     }
@@ -88,9 +89,9 @@
     }
     
         input, select {
-            width:15em;
+            width:25.5em;
             height:2em;
-            margin-left: 1em;
+            margin-left: -70px;
             margin-right: 1em;
             margin-bottom: 1em;
             
@@ -126,7 +127,7 @@
            width: 15em;
            margin-left: 210px;
            border-color:#FF7013;
-        }
+                   }
     br {clear:both;}
     
     @media screen and (max-width:1550px) { 
@@ -137,7 +138,7 @@
         }
     
         .but {
-    margin-left: 10px;
+    margin-left: 200px;
     }
     
     }
@@ -150,15 +151,15 @@
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn</a>
+            <li><a href="learn.html">Learn Overview</a>
                 <ul id="mobileHide">
-                    <li><a href="goal1.html">Goal 1</a></li>
-                    <li><a href="goal2.html">Goal 2</a></li>
-                    <li><a href="goal3.html">Goal 3</a></li>
+                    <li><a href="#lg1">Goal 1</a></li>
+                    <li><a href="#lg2">Goal 2</a></li>
+                    <li><a href="#lg3">Goal 3</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">References</a></li>
-            <li class="lastMobile"><a href="#contact.html">Contact</a></li>
+            <li class="lastMobile"><a href="contact.html">Contact</a></li>
         </ul>
     </div>
     </nav>
@@ -171,7 +172,7 @@
                                         Park Hill South High School <br>
                                         Riverside, MO 64150<br></p>
                                       <p> <em>Email</em>: <a href="mailto:jbd2f6@umsystem.edu">jbd2f6@umsystem.edu</a><br> 
-            <em>Phone</em>: 573-882-7881 </p></div>
+            <em>Phone</em>: 1-888-888-8888 </p></div>
         <div class="item2">
          
         <p>Fill in the form for easy contact.</p>
@@ -201,9 +202,10 @@
     <footer>
         <div class="box">
         <p>Joshua Dorr <br>
-            <img class="zoom" src="email3.png"  width="20" height="20" alt="email Icon">jbd2f6@umsystem.edu <br>
+            <img class="zoom" src="email3.png"  width="20" height="20" alt="email Icon"><a href="contact.html">jbd2f6@umsystem.edu</a> <br>
             <img class="zoom" src="phone2.png"  width="20" height="20" alt="email Icon"> 1+888-888-8888<br>
             &copy; Copyright 2021 Joshua Dorr </p> 
+            <div>Photos licensed from Adobe Stock <a href='https://stock.adobe.com/'>https://stock.adobe.com/</a></div>
             <a href='https://www.freepik.com/photos/vintage'>Vintage photo created by benzoix - www.freepik.com</a>
             <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>

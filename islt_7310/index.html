@@ -9,100 +9,7 @@
                <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
             </head>
             <style>
-                @media screen and (min-width: 760px) {
-    img {
-        max-width: 100%;
-        text-align: center;
-        padding-right: 10px;
-    }
-    .grid {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 20% 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-        "picture item1"
-        "item2 item2"
-        "item3 item3"
-        "item4 item4";
-    }
-.picture {
-    grid-area: picture;
-    max-width: 100%;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    }
-.item1 {
-    grid-area: item1;
-    padding-right: 20px;
-    }
-.item2 {
-    grid-area: item2;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-self: left;
-    }
-.item3 {
-    grid-area: item3;
-    justify-self: center;
-    }
-.item4 {
-    grid-area: item4;
-    justify-self: center;
-    }
-}
-@media screen and (max-width: 759px) {
-    .grid {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: 
-            "picture"
-            "item1"
-            "item2"
-            "item3"
-            "item4";
-        font-size: large;
-    }
-    .picture {
-        grid-area: picture;
-        justify-self: center;
-      
-
-    }
-    header {
-        font-size: smaller;
-    }
-    img {
-        max-width: 100%;
- 
-    }
-    .item2 {
-        grid-area: item2
-        justify-self: center;
-    }
-    .item3 {
-        grid-area: item3;
-        justify-self: center;
-        }
-    .item4 {
-        grid-area: item4;
-        justify-self: center;
-        }
-    p {
-        font-size: larger;
-        padding: 10px 10px;
-    }
-    .box {
-        width: 100%;
-        height: 100%;
-        background-image: url(blue.jpg);
-        padding: 0;
-        margin: 0;
-        background-size: cover;
-}
+                
             </style>
 <body>
     <nav>
@@ -111,8 +18,12 @@
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn</a>
-           
+            <li><a href="learn.html">Learn Overview</a>
+                <ul id="mobileHide">
+                    <li><a href="#lg1">Goal 1</a></li>
+                    <li><a href="#lg2">Goal 2</a></li>
+                    <li><a href="#lg3">Goal 3</a></li>
+                </ul>
             </li>
             <li><a href="reflection.html">References</a></li>
             <li class="lastMobile"><a href="contact.html">Contact</a></li>
@@ -122,23 +33,23 @@
     <header><h1>Landmark US Supreme Court Cases</h1></header>
 <main>
     <div class="grid">
-        <div class="picture"><img src="Gavel.jpg"  width="auto" height="auto" alt="Gavel"></div>
+        <div class="picture"><img src="USFlag.jpeg"  width="auto" height="auto" alt="Gavel"></div>
         <div class="item1"><h2>Welcome</h2>
-            Welcome to the Landmark US Supreme Court website for PHS Virtual Government. This website should help you better understand the impact of Judicial Review on the rights of US Citizens.  We will do this by looking at important US Supreme Court cases.</div>
+            Welcome to the Landmark US Supreme Court website for PHS Virtual Government. It is important for everyone to understand the right and liberties we have as citizens of the United States.  This website should help you better understand the impact of Judicial Review on the rights of US Citizens.  We will do this by looking at 11 important US Supreme Court cases.</div>
         <div class="item2"><h2>About the Site</h2>
-            Judicial Review is an important concept to understand when looking at the US Government.  It is through this process that the Judicial Branch can check the Legislative and Executive branches of the government.  Judicial Review can also help to clarify rights granted to citizens and set precedent for lower courts.  The purpose of this website is to give students a way to learn about important US Supreme Court cases.  The website will give basic information about 20 important court cases.  Students will work to identify the question being decided in the case.  Students will also look at the decision the Supreme Court made.  Second students will look to categorize the court cases by which amendment they relate to.  The last objective is students will be able to take a real-life scenario and apply it to the correct court case that set up the precedent involved.  After reading through this website students will have a better grasp of Landmark US Supreme Court cases and their impact on the United States.</div>
+            Judicial Review is an important U.S. Government concept to understand.  It is through this process the Judicial Branch can check the Legislative and Executive branches of the government.  Judicial Review can also help to clarify rights granted to citizens and set precedent for lower courts.  The purpose of this website is to give students a way to learn about Judicial review by looking at 11 important U.S. Supreme Court cases.  The website contains Educator Credential as well as a Contact page to ask further questions.  The main portion of the page is the Learning Overview.  The Learning section contains 3 goals that look at Judicial Review, the main issue of each case, and then how the decision in each case connects to the U.S. Constitution. By looking at each of the learning goals students will gain a more complete understanding of how U.S. citizens’ rights are gained and protected by the court system in the United States..</div>
     </div>
 </main>
-    <footer>
-        <div class="box">
-        <p>Joshua Dorr <br>
-        <img class="zoom" src="email3.png"  width="20" height="20" alt="email Icon">jbd2f6@umsystem.edu <br>
+<footer>
+    <div class="box">
+    <p>Joshua Dorr <br>
+        <img class="zoom" src="email3.png"  width="20" height="20" alt="email Icon"><a href="contact.html">jbd2f6@umsystem.edu</a> <br>
         <img class="zoom" src="phone2.png"  width="20" height="20" alt="email Icon"> 1+888-888-8888<br>
-            &copy; Copyright 2021 Joshua Dorr </p> 
-            <a href='https://www.freepik.com/photos/vintage'>Vintage photo created by benzoix - www.freepik.com</a>
-            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-            <a href='https://www.freepik.com/photos/wood'>Wood photo created by Racool_studio - www.freepik.com</a>
-        </div>
-    </footer>
+        &copy; Copyright 2021 Joshua Dorr </p> 
+        <div>Photos licensed from Adobe Stock <a href='https://stock.adobe.com/'>https://stock.adobe.com/</a></div>
+        <a href='https://www.freepik.com/photos/vintage'>Vintage photo created by benzoix - www.freepik.com</a>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+</footer>
 </body>
 </html>

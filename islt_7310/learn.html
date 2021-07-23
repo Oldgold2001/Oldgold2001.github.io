@@ -8,7 +8,8 @@
                <link rel="stylesheet" href="nav.css">
                <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
            <style>
-                table.learntable {
+            
+            table.learntable {
                   width: 100%;
                   background-color: #ffffff;
                   border-collapse: collapse;
@@ -52,7 +53,9 @@
                     padding-left: 100px;
                     padding-right: 100px;
                 }
-                main {overflow: scroll;}
+                main {overflow: scroll;
+                overflow: hidden;
+                }
 
 img {
     max-width: 100%;
@@ -69,135 +72,6 @@ div {
     padding-left: 10px ;
     text-indent: -22px ;
     list-style-type: decimal;
-}
-
-@media screen and (min-width: 760px) {
-    img {
-        max-width: 100%;
-        text-align: center;
-        padding-right: 10px;
-    }
-    .grid {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 20% 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-        "picture item1"
-        "item2 item2"
-        "item3 item3"
-        "item4 item4";
-    }
-.picture {
-    grid-area: picture;
-    max-width: 100%;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    }
-.item1 {
-    grid-area: item1;
-    padding-right: 20px;
-    }
-.item2 {
-    grid-area: item2;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-self: left;
-    }
-.item3 {
-    grid-area: item3;
-    justify-self: center;
-    }
-.item4 {
-    grid-area: item4;
-    justify-self: center;
-    }
-}
-@media screen and (max-width: 759px) {
-    .grid {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: 
-            "picture"
-            "item1"
-            "item2"
-            "item3"
-            "item4";
-        font-size: large;
-    }
-    .picture {
-        grid-area: picture;
-        justify-self: center;
-    }
-    header {
-        font-size: smaller;
-    }
-    img {
-        max-width: 100%;
- 
-    }
-    .item2 {
-        grid-area: item2;
-        justify-self: center;
-    }
-    .item3 {
-        grid-area: item3;
-        justify-self: center;
-        }
-    .item4 {
-        grid-area: item4;
-        justify-self: center;
-        }
-    p {
-        font-size: larger;
-        padding: 10px 10px;
-    }
-    .box {
-        width: 100%;
-        height: 100%;
-        background-image: url(blue.jpg);
-        padding: 0;
-        margin: 0;
-        background-size: cover;
-}
-
-@media print {
-* {
-    background: transparent !important;
-    color: black !important;
-    font-size: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: none !important;
-    text-shadow: none !important;
-}
-    nav,
-    .item3,
-    .item4,
-    .video,
-    .picture,
-    img,
-    #video1
-    {
-        display: none;
-}
-h1 {
-    font-size: 30pt;
-    line-height: 30pt;
-    margin: 0;
-  }
-  
-  h2,h3,h4,h5,h6 {
-    font-size: 20pt;
-    line-height: 30pt;
-    margin: 0;
-  }
-
-@page {
-    margin: 1in;
-}
 }
 </style>
             </head>
@@ -223,7 +97,7 @@ h1 {
     <header><a href id="top"><h1>Learning Goals</h1></a></header>
     <main>
         <div class="grid">
-           <div class="picture"><img src="Justices2021.jpg"  width="auto" height="auto" alt="Supreme Court"></div>
+           <div class="picture"><img src="GavelandBooks.jpeg"  width="auto" height="auto" alt="Gavel"></div>
             <div class="item1">
                 <h3>Goals</h3>
                 <p><a href="#lg1">Learning Goal 1</a> - Students will understand the concept of Judicial Review.</p>
@@ -233,24 +107,27 @@ h1 {
             <div class="item2"><a id="lg1"><p><h1><u>Learning Goal 1</u></h1></p></a>
                 <p><h2><em>Marbury v. Madison</em></h2></p>                 
                 <p>Judicial Review is a process that is not officially defined in the US Constitution.  However, it is an important part of the checks and balance system we have in our government.  Through Judicial Review the courts can check the power of the Legislative and Executive branch of the United States government.  By making decisions on questions brought before the Supreme Court they can declare a law or act to be unconstitutional or further clarify the interpretation of how the law should be applied to the citizens of the country.  Judicial Review was originally set up in the court case Marbury v. Madison in 1803.</p>
-                <center><iframe id="video1" width="500" height="300" src="https://www.youtube.com/embed/KwciUVLdSPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                <p><a href=https://www.thirteen.org/wnet/supremecourt/democracy/landmark_marbury.html'>PBS Landmark Cases: Marbury v Madison</a></p>
+                <center><iframe id="video1" width="600" height="360" src="https://www.youtube.com/embed/KwciUVLdSPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
                 <p><h2>Questions</h2></p>
                 <p>After watching the video answer questions:</p>
                 <li class="hangingindent">A point of importance in this case is that Marshall ruled an act of Congress (The Judiciary Act of 1789) to be...</li>
                 <li class="hangingindent">Judicial review is a basic Constitutional principle reaffirmed by this case. What is judicial review?</li>
             </br>
             <a href="#top">Back to top</a></div>
-            <div class="item3"><a id="lg2"><h2>11 Landmark Cases</h2></a>
+            <div class="item3"><a id="lg2"><p><h1><u>Learning Goal 2</u></h1></p></a>
+                <p><h2>11 Landmark Cases</h2></p>
                 <p>There are many court cases that are decided on every year.  For the purposes of this website, we will focus on 11 Landmark US Supreme Court cases selected by the American Bar Association.  Students will learn about the issue of the case and what caused it to be heard by the Supreme Court.  This is often called the question of the case.  The Students will learn about the basic facts of the case as well as the decision.  Next the students will go to the oyez.com website to research the cases further.  By looking at this website students will be able to see the majority, concurring, or dissenting opinion for each of the 11 cases.</p>
                 <p><a href='https://www.americanbar.org/groups/public_education/programs/constitution_day/landmark-cases/'>American Bar Association Article</a></p>
-            <p><h3>Court Cases</h3></p>
+                <p id="pic1"><center><img src="SupCourt2.jpeg"  width="550px" height="300px" alt="Supreme Court Building"></center></p>
+                <p><h3>Court Cases</h3></p>
                 Case names will link to information on <a href='https://www.oyez.org/ '>www.oyez.org/ </a>
                 <br>
                 <ul>
-                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1789-1850/5us137'><em>Marbury v Madison</em></a> (1803) - Established Judicial Review</p></dl>
-                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1789-1850/17us316'><em>McCulloch v Maryland</em></a> (1819) – Established implied powers of Congress and federal supremacy</dl></p>
-                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1789-1850/22us1'><em>Gibbons v Ogden</em></a> (1824) – Gave the federal government more power to regulate the economy</dl></p>
-                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1850-1900/60us393'><em>Dred Scott v Sanford</em></a> (1857) – Stated Slaves were property and helped lead to Civil War</dl></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1789-1850/5us137'><em>Marbury v Madison</em></a> (1803) - Even though case itself was not as important it established Judicial Review.</p></dl>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1789-1850/17us316'><em>McCulloch v Maryland</em></a> (1819) – Could the state of Maryland pass laws that interfered with the National Bank established by Congress? Established implied powers for Congress and federal supremacy.</dl></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1789-1850/22us1'><em>Gibbons v Ogden</em></a> (1824) – Gave the federal government more power to regulate the economy.</dl></p>
+                <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1850-1900/60us393'><em>Dred Scott v Sanford</em></a> (1857) – Stated Slaves were property and helped lead to Civil War.</dl></p>
                 <p><li class="hangingindent"><a href='https://www.o<dl><li class="hangingindent"><a href='https://www.oyez.org/cases/1940-1955/347us483'><em>Brown v Board of Education</em></a> (1954) – Overturned segregation laws in schools and laid the ground work for the Civil Rights movement of the 60s.</dl></p>
                 <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1962/155'><em>Gideon v Wainwright</em></a> (1963) – Established the defendants right to a lawyer in all state criminal trials.</dl></p>
                 <p><li class="hangingindent"><a href='https://www.oyez.org/cases/1965/759'><em>Miranda v Arizona</em></a> (1966) – Said rights must be told to anyone being accused of a crime by the police.  Created the Miranda Rights.</dl></p>
@@ -261,7 +138,8 @@ h1 {
                 </br>
                 <a href="#top">Back to top</a>    
             </div>
-            <div class="item4"><p><a id="lg3"><h2>How do the Justices decide?</h2></p></a>
+            <div class="item4"><p><a id="lg3"><p><h1><u>Learning Goal 3</u></h1></p></a>
+               <p><h2>How do the Justices decide?</h2></p>
                 <p>The next step in understanding the court cases is looking at the amendments they are based upon.  The question of each case is based off an amendment or article of the US Constitution.  The Supreme Court justices will look at the Constitution and decide based on how they interpret the Constitution.  By matching the Landmark Court Cases up with the appropriate article or amendment it will allow the students to see the connection between the case and the Constitution.</p>        
                 <p><center><img src="USConstitution.jpg"  width="350" height="auto" alt="US Constitution"></center></p>
                         <p><a href='https://www.archives.gov/founding-docs/constitution-transcript '><center>US Constitution</center></a></p>
@@ -340,19 +218,25 @@ h1 {
                             </tfoot>
                           </table></center>
                 </br>
-                <a href="#top">Back to top</a>
+                <p>A great way to learn about the rights and liberties a U.S. Citizen has is by playing the <em>"Do I have a Right?"</em> game on the iCivics website.
+                    Click on the link or picture below to play the game and learn more about the rights U.S. Citizens have due to the Consitution.</p>
+                    <p><a href='https://www.icivics.org/games/do-i-have-right'><center><img src="rightsgame.png" width="300px" height="200px" alt="Do I have a Right Game"></a></center></p>
+                    <p><a href='https://www.icivics.org/games/do-i-have-right'><center>Do I have Right?</center></p>
+                        
+                <p><a href="#top">Back to top</a></p>
                 </div>    
         </div>
     </main>
     <footer>
-        <div class="box">
-        <p>Joshua Dorr <br>
-            <img class="zoom" src="email3.png"  width="20" height="20" alt="email Icon">jbd2f6@umsystem.edu <br>
-            <img class="zoom" src="phone2.png"  width="20" height="20" alt="email Icon"> 1+888-888-8888<br>
-            &copy; Copyright 2021 Joshua Dorr </p> 
-            <a href='https://www.freepik.com/photos/vintage'>Vintage photo created by benzoix - www.freepik.com</a>
-            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        </div>
-    </footer>
+    <div class="box">
+    <p>Joshua Dorr <br>
+        <img class="zoom" src="email3.png"  width="20" height="20" alt="email Icon"><a href="contact.html">jbd2f6@umsystem.edu</a> <br>
+        <img class="zoom" src="phone2.png"  width="20" height="20" alt="email Icon"> 1+888-888-8888<br>
+        &copy; Copyright 2021 Joshua Dorr </p> 
+        <div>Photos licensed from Adobe Stock <a href='https://stock.adobe.com/'>https://stock.adobe.com/</a></div>
+        <a href='https://www.freepik.com/photos/vintage'>Vintage photo created by benzoix - www.freepik.com</a>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+</footer>
 </body>
 </html>
