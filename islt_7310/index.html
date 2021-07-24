@@ -7,10 +7,125 @@
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
                <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-            </head>
+      
             <style>
-                
+               @media screen and (min-width: 760px) {
+    img {
+        max-width: 100%;
+        text-align: center;
+        padding-right: 10px;
+    }
+    .grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "picture item1"
+        "item2 item2"
+        "item3 item3"
+        "item4 item4";
+    }
+.picture {
+    grid-area: picture;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+.item1 {
+    grid-area: item1;
+    padding-top: 10px;
+    padding-right: 20px;
+    font-size: large;
+    }
+.item2 {
+    grid-area: item2;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-self: left;
+    font-size: large;
+    }
+.item3 {
+    grid-area: item3;
+    justify-self: center;
+    }
+.item4 {
+    grid-area: item4;
+    justify-self: center;
+    }
+} 
+@media print {
+* {
+    background: transparent !important;
+    color: black !important;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+@media print {
+* {
+    background: transparent !important;
+    color: black !important;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+    nav,
+    .item3,
+    .item4,
+    .video,
+    .picture,
+    img,
+    iframe
+    {
+        display: none;
+}
+h1 {
+    font-size: 30pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+  
+  h2,h3,h4,h5,h6 {
+    font-size: 20pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+
+@page {
+    margin: 1in;
+}
+}
+    .item3,
+    .item4,
+    .video,
+    .picture,
+    img,
+    iframe
+    {
+        display: none;
+}
+h1 {
+    font-size: 30pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+  
+  h2,h3,h4,h5,h6 {
+    font-size: 20pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+
+@page {
+    margin: 1in;
+}
+}
             </style>
+</head>
 <body>
     <nav>
         <div class="box">
@@ -18,11 +133,11 @@
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn Overview</a>
+            <li><a href="learn.html">Learning Goals</a>
                 <ul id="mobileHide">
-                    <li><a href="#lg1">Goal 1</a></li>
-                    <li><a href="#lg2">Goal 2</a></li>
-                    <li><a href="#lg3">Goal 3</a></li>
+                    <li><a href="learn.html#lg1" >Goal 1</a></li>
+                    <li><a href="learn.html#lg2">Goal 2</a></li>
+                    <li><a href="learn.html#lg3">Goal 3</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">References</a></li>
@@ -33,11 +148,11 @@
     <header><h1>Landmark US Supreme Court Cases</h1></header>
 <main>
     <div class="grid">
-        <div class="picture"><img src="USFlag.jpeg"  width="auto" height="auto" alt="Gavel"></div>
+        <div class="picture"><img src="USFlag.jpeg"  width="400" height="250" alt="Gavel"></div>
         <div class="item1"><h2>Welcome</h2>
-            Welcome to the Landmark US Supreme Court website for PHS Virtual Government. It is important for everyone to understand the right and liberties we have as citizens of the United States.  This website should help you better understand the impact of Judicial Review on the rights of US Citizens.  We will do this by looking at 11 important US Supreme Court cases.</div>
+            Welcome to the Landmark US Supreme Court website for PHS Virtual Government. The United States has many Civil Rights and Liberties that were granted by the Constitution.  Since it was first written many Amendments have been added extending new liberties and expanding older ones. It is important for everyone to understand the right and liberties we have as citizens of the United States.  This website should help you better understand the impact of Judicial Review on the rights of US Citizens.  We will do this by looking at 11 important US Supreme Court cases.</div>
         <div class="item2"><h2>About the Site</h2>
-            Judicial Review is an important U.S. Government concept to understand.  It is through this process the Judicial Branch can check the Legislative and Executive branches of the government.  Judicial Review can also help to clarify rights granted to citizens and set precedent for lower courts.  The purpose of this website is to give students a way to learn about Judicial review by looking at 11 important U.S. Supreme Court cases.  The website contains Educator Credential as well as a Contact page to ask further questions.  The main portion of the page is the Learning Overview.  The Learning section contains 3 goals that look at Judicial Review, the main issue of each case, and then how the decision in each case connects to the U.S. Constitution. By looking at each of the learning goals students will gain a more complete understanding of how U.S. citizens’ rights are gained and protected by the court system in the United States..</div>
+            Judicial Review is an important U.S. Government concept to understand.  It is through this process the Judicial Branch can check the Legislative and Executive branches of the government.  Judicial Review can also help to clarify rights granted to citizens and set precedent for lower courts.  The purpose of this website is to give readers a way to learn about Judicial review by looking at 11 important U.S. Supreme Court cases.  The website contains Educator Credential as well as a Contact page to ask further questions.  The main portion of the page is the Learning Overview.  This section contains 3 goals: a look at Judicial Review, the main issue of each case, and how the decision in each case connects to the U.S. Constitution. By looking at each of the learning goals students will gain a more complete understanding of how U.S. citizens’ rights are gained and protected by the court system in the United States.</div>
     </div>
 </main>
 <footer>

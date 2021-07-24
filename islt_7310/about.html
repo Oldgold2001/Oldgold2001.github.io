@@ -8,7 +8,84 @@
         <link rel="stylesheet" href="nav.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <style>
-    
+    @media screen and (min-width: 760px) {
+    img {
+        max-width: 100%;
+        text-align: center;
+        padding-right: 10px;
+    }
+    .grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "picture item1"
+        "item2 item2"
+        "item3 item3"
+        "item4 item4";
+    }
+.picture {
+    grid-area: picture;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+.item1 {
+    grid-area: item1;
+    padding-right: 20px;
+    }
+.item2 {
+    grid-area: item2;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-self: left;
+    }
+.item3 {
+    grid-area: item3;
+    justify-self: center;
+    }
+.item4 {
+    grid-area: item4;
+    justify-self: center;
+    }
+}
+@media print {
+* {
+    background: transparent !important;
+    color: black !important;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+    nav,
+    .item3,
+    .item4,
+    .video,
+    .picture,
+    img,
+    iframe
+    {
+        display: none;
+}
+h1 {
+    font-size: 30pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+  
+  h2,h3,h4,h5,h6 {
+    font-size: 20pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+
+@page {
+    margin: 1in;
+}
+}
 </style>
      
     </head>
@@ -19,11 +96,11 @@
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn Overview</a>
+            <li><a href="learn.html">Learning Goals</a>
                 <ul id="mobileHide">
-                    <li><a href="#lg1">Goal 1</a></li>
-                    <li><a href="#lg2">Goal 2</a></li>
-                    <li><a href="#lg3">Goal 3</a></li>
+                    <li><a href="learn.html#lg1" >Goal 1</a></li>
+                    <li><a href="learn.html#lg2">Goal 2</a></li>
+                    <li><a href="learn.html#lg3">Goal 3</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">References</a></li>
@@ -35,14 +112,14 @@
     </header>
     <main>
         <div class="grid">
-            <div class="picture"><img src="Dorrselfpicture.JPG"  width="auto" height="auto" alt="Joshua Dorr"> </div>
+            <div class="picture"><img src="Dorrselfpicture.JPG"  width="350" height="270" alt="Joshua Dorr"> </div>
             <div class="item1"><h3>About Me</h3>
-                <p>Hello, I am Joshua Dorr and welcome to my page. I graduated from high school in 1996 from Centralia High School in Centralia, MO. Following high school, I attended the University of Missouri – Columbia and graduated in May of 2001 with a Bachelor of Science in Education with an emphasis in Secondary Social Studies.  In 2006 I received my Masters in Educational Administration from Williams Woods University.  Currently, I am working toward my Educational Specialist degree from the University of Missouri - Columbia with an emphasis in Learning Technologies and Development.<br/><br/> I have taught a variety of Social Studies courses over my 20-year career, including US Government for the past 6 years.  The last 4 years at my current school I have helped develop and implement the Virtual US Government course.  I have been involved in the formulating of activities and materials to teach the US Government curriculum through and online platform.</p></div>
+                <p>Hello, I am Joshua Dorr and welcome to my page. I graduated from high school in 1996 from Centralia High School in Centralia, MO. Following high school, I attended the University of Missouri – Columbia and graduated in May of 2001 with a Bachelor of Science in Education with an emphasis in Secondary Social Studies.  In 2006 I received my Masters in Educational Administration from Williams Woods University.  Currently, I am working toward my Educational Specialist degree from the University of Missouri - Columbia with an emphasis in Learning Technologies and Development.<br/><br/> I have taught a variety of Social Studies courses over my 20-year career, including US Government for the past 6 years.  The last 4 years at my current school I have helped develop and implement the Virtual US Government course.  I have been involved in the formulating of activities and materials to teach the US Government curriculum through an online platform.</p></div>
            <br>
             <div class="item2">I also coach basketball which takes a lot of time during the winter and summer. When I am not teaching or coaching I enjoy spending time with my wife and two children. My family enjoys exploring around the Kansas City area and we are always looking for a new park or restaurant.  I also like to get outside the city when I can.  I have had the opportunity to travel to over 40 states in the U.S. as well as France, the United Kingdom, and Southeast Asia.
                 <blockquote><strong>“Do what you can, with what you have, where you are.”</strong></blockquote>
                 <blockquote><em>Teddy Roosevelt</em></blockquote></div><br>
-            <div class="item3"><iframe width="560" height="315" src="https://www.youtube.com/embed/mA0HynbipJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="item3"><iframe width="560" height="315" src="https://www.youtube.com/embed/mA0HynbipJg" title="YouTube video player" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div class="item4"><a href="Dorrresume.pdf">Resume</a></div>
                 </div>
     </main>

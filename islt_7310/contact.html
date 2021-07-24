@@ -68,7 +68,7 @@
     border-width: 3px;
     justify-self: left;
     }
-    #comments{
+    #Message{
         width:25.5em; 
         height:100px;
         margin-left: -70px;
@@ -102,7 +102,7 @@
               }
     
               input:valid {
-                  border: 1px solid 560183;
+                  border: 1px solid #226ad8;
                             }
     input:invalid{
         box-shadow: none;
@@ -142,7 +142,42 @@
     }
     
     }
-            </style>
+            
+    @media print {
+* {
+    background: transparent !important;
+    color: black !important;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+    nav,
+    .item3,
+    .item4,
+    .video,
+    .picture,
+    img,
+    iframe
+    {
+        display: none;
+}
+h1 {
+    font-size: 30pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+  
+  h2,h3,h4,h5,h6 {
+    font-size: 20pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+
+@page {
+    margin: 1in;
+}
+}</style>
 </head>
 <body>
     <nav>
@@ -153,9 +188,9 @@
             <li><a href="about.html">About</a></li>
             <li><a href="learn.html">Learn Overview</a>
                 <ul id="mobileHide">
-                    <li><a href="#lg1">Goal 1</a></li>
-                    <li><a href="#lg2">Goal 2</a></li>
-                    <li><a href="#lg3">Goal 3</a></li>
+                    <li><a href="learn.html#lg1" >Goal 1</a></li>
+                    <li><a href="learn.html#lg2">Goal 2</a></li>
+                    <li><a href="learn.html#lg3">Goal 3</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">References</a></li>
@@ -178,18 +213,18 @@
         <p>Fill in the form for easy contact.</p>
         <form id="formid" action="mailto:jbd2f6@umsystem.edu?Subject=Educational%20Website%20Contact" method="post" enctype="text/plain">
             <fieldset>
-            <label for="first">First Name:</label>
-            <input type="text" name="First Name" autofocus required placeholder="First Name">  
+            <label for="FirstName">First Name:</label>
+            <input type="text" id="FirstName" autofocus required placeholder="First Name">  
             <br>
-            <label for="Last">Last Name:</label>
-            <input type="text" name="Last Name" required placeholder="Last Name">  
+            <label for="LastName">Last Name:</label>
+            <input type="text" id="LastName" required placeholder="Last Name">  
             <br>
-            <label for="email">Email:</label>
-            <input type="text" name="Email" required placeholder="Email">
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" required placeholder="Email">
             <br>
             <label for="Message">Message:</label>
-              
-            <textarea id="comments" name="Comments" placeholder="Your Message Here." required></textarea> 
+             
+            <textarea id="Message" name="Comments" placeholder="Your Message Here." required></textarea> 
             <br>
             <input class="but" type="submit" value="Submit"> <br>
            

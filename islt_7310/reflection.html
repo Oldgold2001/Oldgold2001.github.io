@@ -19,6 +19,41 @@
   margin-right: auto;
   padding: 10px;
 }
+@media print {
+* {
+    background: transparent !important;
+    color: black !important;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+    nav,
+    .item3,
+    .item4,
+    .video,
+    .picture1,
+    img,
+    iframe
+    {
+        display: none;
+}
+h1 {
+    font-size: 30pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+  
+  h2,h3,h4,h5,h6 {
+    font-size: 20pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+
+@page {
+    margin: 1in;
+}
+}
         </style>            
 </head>
 <body>
@@ -30,9 +65,9 @@
             <li><a href="about.html">About</a></li>
             <li><a href="learn.html">Learn Overview</a>
                 <ul id="mobileHide">
-                    <li><a href="#lg1">Goal 1</a></li>
-                    <li><a href="#lg2">Goal 2</a></li>
-                    <li><a href="#lg3">Goal 3</a></li>
+                    <li><a href="learn.html#lg1" >Goal 1</a></li>
+                    <li><a href="learn.html#lg2">Goal 2</a></li>
+                    <li><a href="learn.html#lg3">Goal 3</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">References</a></li>
@@ -43,7 +78,7 @@
     <header><h1>References</h1></header>
     <main>
          <div>
-            <img class="picture1" src="OpenBook.jpeg"  width="700px" height="200px" alt="Law Books Open">
+            <img class="picture1" src="OpenBook.jpeg"  width="700" height="200" alt="Law Books Open">
             <p class="hangingindent"><em>172,190 BEST Gavel IMAGES, STOCK PHOTOS & VECTORS.</em> Adobe Stock. (n.d.). <a href='https://stock.adobe.com/search?k=gavel'>https://stock.adobe.com/search?k=gavel</a>.</p>
             <p class="hangingindent">Cornell’s Legal Information Institute, Justicia, Chicago – Kent College of Law. Retrieved 2021, June 13. <a href='http://oyez.com'>http://oyez.com</a>.</p>
             <p class="hangingindent">Do I have a Right? (Online Game) [Video Game]. (2003). iCivics. <a href='https://www.icivics.org/games/do-i-have-right'> https://www.icivics.org/games/do-i-have-right</a>. </p>    
